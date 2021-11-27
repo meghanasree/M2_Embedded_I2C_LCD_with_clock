@@ -49,13 +49,14 @@ Implementation of water level indicator
  # How
  - This application is implemented using C programing language
 # High level requirements
- - A constant 5v power supply is given to the microcontroller and rest of the circuit from a battery.
- - The tank has 9 conductive type sensors (other types of sensors have been mentioned earlier but in our project only conductive type are used) embedded into it and 8 wires of sensors out of 9 are connected to transistors and the 9th is connected to 5v+ supply.
- - The use of transistor is it acts as inverter (i.e. in on state gives low voltage at output and in non conducting state gives high voltage at its output), all transistors outputs are connected to PORTB of microcontroller.
-Seven segment display is connected to PORTD. It is connected in common cathode fashion.
- - The Output for the 7th level is not only shown on seven segment display but also indicated with a discontinuous buzzer sound.
-  - Output for the 8th level (i.e. tank full condition) is not only shown in seven segment display but also indicated with a continuous buzzer sound.
-
+ - Sends an alert to let you know water is too high or too low
+ - Automatically adjusts water levels
+ - Save money by using less electricity and water
+ - Can help avoid seepage of roofs and walls due to tanks overflowing
+ - Automatic operation saves you manual labor time
+ - Consumes a small amount little energy, perfect for on-going operations
+ - Indicates water levels in any type of storage tank or body of liquid
+ - A water alarm is loud so you can easily hear it
 # Low level requirements
  - There is no water available in the source tank.
  - Intermediate level i.e. either of 3rd to 7th level.
