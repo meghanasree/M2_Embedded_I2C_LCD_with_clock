@@ -1,4 +1,4 @@
-# Requirements for Water level indicator
+# Requirements for I2C LCD WITH CLOCK
 # Identifying Features
 - Communicate on a 2-wire I2C bus
 -  API compatible with the current character LCD component
@@ -8,7 +8,7 @@
 
 # State of art/Research
 # Water level indicator with alarm system
-![](https://s3.ap-south-1.amazonaws.com/rzp-prod-merchant-assets/payment-link/description/water-tank-500x500_DUGTX5ronA5YgC.jpg)
+![](https://www.hdhprojects.nl/wp-content/uploads/2017/12/i2c-lcd-test-768x576.jpg)
 
 # SWOT ANALYSIS
 # Strength
@@ -26,9 +26,9 @@
 - It is half duplex mode of communication.
 
 # Opportunities
- - Can be used in water tanks to control water levels
- - Automatically turn ON/OFF pumps
- - Can be used in factories, commercial complexes, apartments, home.
+ -This clock only counts for 1 hour and then starts over again. Minor changes are needed to write a 24 hour clock, 
+  but for now I thought this is a good start. My clock is not so accurate at the moment. It’s about 2 seconds a minute to fast.
+  To get the clock more accurate you can change the CMR_SECOND and the CMR_MINUT number in the timer4clocklib.h.
 #  Threats
  - The protocol is managed by software stack.
  -  This increases processing overheads on the µP and µC.
