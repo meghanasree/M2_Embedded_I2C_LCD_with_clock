@@ -24,14 +24,14 @@
 # Weakness
 -  The hardware complexity increases when number of master/slave devices are more in the circuit.
 - It is half duplex mode of communication.
-- The protocol is managed by software stack. This increases processing overheads on the µP and µC.
+
 # Opportunities
  - Can be used in water tanks to control water levels
  - Automatically turn ON/OFF pumps
  - Can be used in factories, commercial complexes, apartments, home.
 #  Threats
- - Most float switches are outdated
- - No LED indicator lights
+ - The protocol is managed by software stack.
+ -  This increases processing overheads on the µP and µC.
 # 4W's and 1H
 
 # Who
@@ -39,25 +39,16 @@ B.Meghana try to implement a problem statement
 # What
 Implementation I2C LCD With clock
 # Where
- - Cooling tower water level control
- - Sewage pump level control
- - Water level control
- - Pump controller
- - Stream level monitoring
- - Irrigation control
- - Police vans in emergency
+ - This clock only counts for 1 hour and then starts over again. Minor changes are needed to write a 24 hour clock, 
+  but for now I thought this is a good start. My clock is not so accurate at the moment. It’s about 2 seconds a minute to fast.
+  To get the clock more accurate you can change the CMR_SECOND and the CMR_MINUT number in the timer4clocklib.h.
  # How
  - This application is implemented using C programing language
 # High level requirements
- - Sends an alert to let you know water is too high or too low
- - Automatically adjusts water levels
- - Save money by using less electricity and water
- - Can help avoid seepage of roofs and walls due to tanks overflowing
- - Automatic operation saves you manual labor time
- - Consumes a small amount little energy, perfect for on-going operations
- - Indicates water levels in any type of storage tank or body of liquid
- - A water alarm is loud so you can easily hear it
+ - Put the correct voltages on all the lcd pins for the first 4 bits of a byte you want to send.
+ - Set the enable pin high for more then 450 nano seconds and keep the rest of the pins the same.
+ - Set the enable pin low for more then 37 micro seconds and keep the rest of the pins the same.
+ - Do the last 3 steps again, but now for the last 4 bits of 8.
 # Low level requirements
- - There is no water available in the source tank.
- - Intermediate level i.e. either of 3rd to 7th level.
- - There is ample amount of water available in the source tank.
+ - Again I used the same framework to get the lcd working simultanesly 
+  with other devices in the future and for now I only added 1 led to test the multi threating.
