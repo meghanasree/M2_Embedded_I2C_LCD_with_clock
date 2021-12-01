@@ -1,3 +1,3 @@
-# Water level indicator with alarm system
+# WI2C LCD WITH CLOCK
 
-![](https://www.elprocus.com/wp-content/uploads/2014/12/algorithm.jpg)
+![](https://www.electronics-lab.com/wp-content/uploads/2017/05/20x4LCD.png)
