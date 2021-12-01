@@ -1,3 +1,3 @@
-# Water level indicator with alarm system
+# I2C LCD WITH CLOCK
 
-![](https://www.electronicshub.org/wp-content/uploads/2013/05/Water-Level-Indicator-Flow-Chart.jpg)
+![](https://www.microchip.com/forums/download.axd?file=0;1006616&filename=flowchart.JPG)
