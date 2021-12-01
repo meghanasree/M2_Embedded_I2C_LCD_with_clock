@@ -1,3 +1,3 @@
-# Water level indicator with alarm system
+# I2C LCD with clock
 
-![](https://www.electronicshub.org/wp-content/uploads/2013/05/Water-Level-Indicator-Schematic-Diagram.jpg)
+![](http://www.hdhprojects.nl/wp-content/uploads/2017/12/Drawing-i2c-display2-768x418.jpg)
